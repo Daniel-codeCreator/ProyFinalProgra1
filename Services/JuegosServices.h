@@ -1,0 +1,14 @@
+//
+// Created by dboc9 on 2/04/2026.
+//
+
+#ifndef PROYFINALPROGRA1_JUEGOSSERVICES_H
+#define PROYFINALPROGRA1_JUEGOSSERVICES_H
+
+
+class JuegosServices
+{
+};
+
+
+#endif //PROYFINALPROGRA1_JUEGOSSERVICES_H

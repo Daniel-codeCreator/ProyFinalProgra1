@@ -1,0 +1,14 @@
+//
+// Created by dboc9 on 2/04/2026.
+//
+
+#ifndef PROYFINALPROGRA1_PARTIDASSERVICES_H
+#define PROYFINALPROGRA1_PARTIDASSERVICES_H
+
+
+class PartidasServices
+{
+};
+
+
+#endif //PROYFINALPROGRA1_PARTIDASSERVICES_H
