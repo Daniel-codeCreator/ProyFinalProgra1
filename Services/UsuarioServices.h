@@ -10,9 +10,9 @@ class UsuarioServices {
 
 public:
 
-    void crearUsuario(Conexion &db, Usuarios u);
+    string crearUsuario(Conexion &db, Usuarios u);
 
-    bool iniciarSesion(Conexion &db, string usuario, string clave); // NUEVO
+    bool iniciarSesion(Conexion &db, string usuario, string clave);
 
 
 };

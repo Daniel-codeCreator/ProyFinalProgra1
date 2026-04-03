@@ -7,7 +7,6 @@
 
 void pantallaLogin(Conexion &db)
 {
-
     UsuarioServices usuarioService;
 
     TextBox Usuario(250,200,300,40);

@@ -31,7 +31,9 @@ add_executable(ProyFinalProgra1 main.cpp
         Services/JuegosServices.cpp
         Services/JuegosServices.h
         Services/PartidasServices.cpp
-        Services/PartidasServices.h)
+        Services/PartidasServices.h
+        Juegos/Ahorcados.cpp
+        Juegos/Ahorcados.h)
 
 target_link_libraries(ProyFinalProgra1
         raylib

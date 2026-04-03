@@ -4,7 +4,7 @@
 
 using namespace  std;
 
-void UsuarioServices::crearUsuario(Conexion &db, Usuarios u)
+string UsuarioServices::crearUsuario(Conexion &db, Usuarios u)
 {
 
     SQLHSTMT stmt;
@@ -20,9 +20,23 @@ void UsuarioServices::crearUsuario(Conexion &db, Usuarios u)
 
     SQLExecDirect(stmt, (SQLCHAR*)query.c_str(), SQL_NTS);
 
+    SQLCHAR usuarioGenerado[50];
+
+    string usuario = "";
+
+    if (SQLFetch(stmt) == SQL_SUCCESS)
+    {
+        SQLGetData(stmt, 1, SQL_C_CHAR, usuarioGenerado, sizeof(usuarioGenerado), NULL);
+
+        usuario = (char*)usuarioGenerado;
+    }
+
+
     SQLFreeHandle(SQL_HANDLE_STMT, stmt);
 
     cout << "Usuario creado correctamente\n";
+
+    return usuario;
 }
 
 bool UsuarioServices::iniciarSesion(Conexion& db, string usuaio, string clave)
