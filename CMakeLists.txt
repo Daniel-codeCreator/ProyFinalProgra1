@@ -33,7 +33,13 @@ add_executable(ProyFinalProgra1 main.cpp
         Services/PartidasServices.cpp
         Services/PartidasServices.h
         Juegos/Ahorcados.cpp
-        Juegos/Ahorcados.h)
+        Juegos/Ahorcados.h
+        Juegos/Serpiente.cpp
+        Juegos/Serpiente.h
+        Juegos/TotiToto.cpp
+        Juegos/TotiToto.h
+        Juegos/RompeBloques.cpp
+        Juegos/RompeBloques.h)
 
 target_link_libraries(ProyFinalProgra1
         raylib

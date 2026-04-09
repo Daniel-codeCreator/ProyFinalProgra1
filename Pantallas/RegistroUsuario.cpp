@@ -73,8 +73,6 @@ void pantallaRegistro(Conexion &db)
             u.correo = correo.getText();
             u.clave = clave.getText();
 
-            // usuarioService.crearUsuario(db, u);
-
             usuarioCreado = usuarioService.crearUsuario(db, u);
             creado = true;
         }
